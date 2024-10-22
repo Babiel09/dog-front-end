@@ -15,6 +15,7 @@ export default function Footer() {
         <div className="hover:text-blue-500 transition-colors cursor-pointer">        
                     <h1 className="text-4xl font-bold text-blue-500">Dog Hub <PiDogBold size={44} onClick={()=>rota.push('#')}/></h1>
                     </div>
+                    <br />
                 <div className="font-bold text-blue-500">
                     <div>
                         <ul className="flex space-x-6 text-gray-600">
