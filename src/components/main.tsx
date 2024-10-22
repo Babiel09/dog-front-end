@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image'
 import Image1 from '../../assets/funny dog.gif'
 import Image2 from '../../assets/cao-foda.jpg'
@@ -17,7 +19,7 @@ export default function MainPage() {
             </div>
             <div className="mt-10 bg-white shadow-md rounded-lg p-6">   
                 <section className="space-y-6">
-                        <h2 className="text-xl font-semibold text-blue-500">Funny moments:</h2>
+                        <h2 className="text-xl font-semibold text-blue-500">See <strong> Funny moments!</strong></h2>
                     <div className="bg-gray-300 p-4 rounded-lg">
                         <Image
                         src={Image1}
@@ -27,7 +29,7 @@ export default function MainPage() {
                         />
                         <p className="text-gray-600 mt-2">My baby is so lazy! 💖😂😂💖</p>
                     </div>
-                        <h2 className="text-xl font-semibold text-blue-500">See a lot of beatyfull Dogs!</h2>
+                        <h2 className="text-xl font-semibold text-blue-500">See a lot of <strong>Beautiful Dogs!</strong></h2>
                     <div className="bg-gray-300 p-4 rounded-lg">
                         <Image
                         src={Image2}
