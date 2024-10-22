@@ -14,7 +14,7 @@ export default function MainPage() {
             <div className="mt-10 bg-white shadow-md rounded-lg p-6">
                     <h2 className="text-2xl font-semibold text-gray-700">Enjoy with us!</h2>
                 <section className="space-y-6">
-                    <div className="bg-gray-100 p-4 rounded-lg">
+                    <div className="bg-gray-300 p-4 rounded-lg">
                         <h2 className="text-xl font-semibold text-blue-500">Funny moments</h2>
                         <Image
                         src={Image1}
@@ -24,7 +24,7 @@ export default function MainPage() {
                         />
                         <p className="text-gray-600 mt-2">My baby is so lazy! 💖😂😂💖</p>
                     </div>
-                    <div className="bg-gray-100 p-4 rounded-lg">
+                    <div className="bg-gray-300 p-4 rounded-lg">
                         <h2 className="text-xl font-semibold text-blue-500">See a lot of beatyfull Dogs!</h2>
                         <Image
                         src={Image2}

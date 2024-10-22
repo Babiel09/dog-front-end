@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { PiDogBold } from "react-icons/pi";
 import {useRouter} from "next/navigation";
+import Link from 'next/link'
 
 export default function Footer() {
   const rota = useRouter()
@@ -27,6 +28,10 @@ export default function Footer() {
                             <FaWhatsapp  size={20} onClick={()=>rota.push('#')}/> 
                             </li>
                         </ul>
+                    </div>
+                    <br />
+                    <div>
+                      <Link href='/questions' target="blanck">See our users questions</Link>
                     </div>
                 </div>
         </div>
