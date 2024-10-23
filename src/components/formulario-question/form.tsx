@@ -1,15 +1,31 @@
 "use client";
 
 import Botao from "@/src/components/botao/botao";
-import { useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
+import { http } from "../http/http";
+import { QuestionProps } from "@/src/utils/questions";
 
 export default function Formulario() {
-    const [titulo, setTitulo] = useState<string>("")
-    const [question, setQuestion] = useState<string>("")
+    const [questionQuestion, setQuestion] = useState<string>("")
+    const [titleQuestiom, setTitle] = useState<string>("")
 
-    
+
+    const handleEnviarForm = (evento:FormEvent<HTMLFormElement>) =>{
+        http.post<QuestionProps>('/question',{
+            title: titleQuestiom,
+            question: questionQuestion
+        })
+        .then(()=>{
+            alert("Question is sending")
+        })
+        .catch((erro)=>{
+            alert(`Ocorreu um erro:${erro}` )
+        })
+        window.location.reload()
+    }
+
     return(
-        <form action="post" className="max-w-4xl mx-auto py-10 px-4">
+        <form className="max-w-4xl mx-auto py-10 px-4" onSubmit={handleEnviarForm}> 
         <div className="mt-10 bg-white shadow-md rounded-lg p-6">
         <section className="space-y-6">
         <div className="bg-gray-200 p-4 rounded-lg">
@@ -21,9 +37,9 @@ export default function Formulario() {
         focus:ring-2 focus:ring-blue-300 focus:outline-none 
         hover:bg-blue-600 placeholder-gray-300"
         type="text"
-        placeholder="Digite a pergunta"
-        value={question}
-        onChange={(evento)=>setQuestion(evento.target.value)}
+        placeholder="Digite o Titulo"
+        value={titleQuestiom}
+        onChange={(evento)=>setTitle(evento.target.value)} 
         />
         <br />
         <br />
@@ -34,8 +50,8 @@ export default function Formulario() {
         hover:bg-blue-600 placeholder-gray-300"
         type="text"
         placeholder="Digite a pergunta"
-        value={titulo}
-        onChange={(evento)=>setTitulo(evento.target.value)}
+        value={questionQuestion}
+        onChange={(evento)=>setQuestion(evento.target.value)}
         />
         <br />
         <br />
