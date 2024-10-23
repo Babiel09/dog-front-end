@@ -10,7 +10,7 @@ import Link from 'next/link'
 export default function Footer() {
   const rota = useRouter()
   return (
-    <footer className="bg-gray-100 py-6 mt-10">
+    <footer className="py-6 mt-10">
       <div className="max-w-6xl mx-auto px-6">
         <div className="hover:text-blue-500 transition-colors cursor-pointer">        
                     <h1 className="text-4xl font-bold text-blue-500">Dog Hub <PiDogBold size={44} onClick={()=>rota.push('#')}/></h1>
