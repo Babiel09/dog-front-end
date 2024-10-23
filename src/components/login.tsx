@@ -1,6 +1,4 @@
 import Input from "./input/input";
-import Image from 'next/image';
-import Foda from '../../assets/foda.jpg'
 
 
 export default function LoginMain() {
