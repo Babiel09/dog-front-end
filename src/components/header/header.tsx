@@ -25,7 +25,7 @@ export default function Header() {
                             <FaDiscord size={20} onClick={()=>rota.push('#')}/>
                             </li>
                             <li className="hover:text-blue-500 transition-colors cursor-pointer">
-                            <FaWhatsapp  size={20} onClick={()=>rota.push('#')}/> 
+                            <FaWhatsapp  size={20} onClick={()=>rota.push('https://api.whatsapp.com/send/?phone=553196984558&text&type=phone_number&app_absent=')}/> 
                             </li>
                         </ul>
                     </div>

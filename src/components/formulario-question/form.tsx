@@ -37,7 +37,7 @@ export default function Formulario() {
         focus:ring-2 focus:ring-blue-300 focus:outline-none 
         hover:bg-blue-600 placeholder-gray-300"
         type="text"
-        placeholder="Digite o Titulo"
+        placeholder="title"
         value={titleQuestiom}
         onChange={(evento)=>setTitle(evento.target.value)} 
         />
@@ -49,7 +49,7 @@ export default function Formulario() {
         focus:ring-2 focus:ring-blue-300 focus:outline-none 
         hover:bg-blue-600 placeholder-gray-300"
         type="text"
-        placeholder="Digite a pergunta"
+        placeholder="question"
         value={questionQuestion}
         onChange={(evento)=>setQuestion(evento.target.value)}
         />
